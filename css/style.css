@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Futura PT;
+}
+/* Types */
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+    color: #292f36;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: 500
+}
+.search i,.filterbtn i{
+    color: #292F36
+}
+/* Navigation Bar Desktop */
+nav {
+    background-color: #292F36;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 140px;
+    padding-left: 40px;
+}
+nav .search{
+    width: 31%;
+    height: 35px;
+    background: white;
+    border-radius: .75rem;
+    display: flex;
+    align-items: center;
+}
+nav .search button{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+nav .search input{
+    width: auto;
+}
+.search button, .search input{
+    background: none;
+    border: none;
+    outline: none;
+}
+nav ul{
+    float: right; 
+    padding-right: 40px;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 110px;
+    margin: 0 10px;
+    color: white;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+nav ul li a{
+    padding: 5px 20px;
+    color: white;   
+    text-decoration: none;
+    border-radius: .75rem;
+}
+nav ul li a.active, nav ul li a:hover{
+    background: #fa9f42;
+    transition: background .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* Home Banner */
+.main-page{
+    background: url(../img/BG%20Banner%20Desktop.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 25em;
+}
+.main-page header{
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.main-page header h1{
+    text-align: center;
+    color: white;
+}
+.main-page .search{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin: 1rem auto;
+    border-radius: .75rem;
+}
+.main-page .search form{
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+}
+.main-page .search form input{
+    width: 70%;
+}
+.main-page .search form button{
+    width: 30px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+    background: white;
+}
+.main-page header a{
+    text-decoration: none;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    width: 60%;
+    background-color: #292f36;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    border-radius: .75rem;
+}
+/* Home Top-Posts Section */
+.container{
+    margin: 3rem auto;
+    width: 80rem;
+    max-width: 90%;
+}
+.container a{
+    text-decoration: none;
+}
+.container > h2{
+    margin-bottom: 2rem;
+}
+.oneRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+.leftpost,.midpost,.rightpost{
+    width: 32%;
+    border-radius: 1.1rem;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.leftpost{
+    background-image: linear-gradient(rgba(115,115,115,0),rgba(16,16,16,1)),url(../img/Google%20mini%20nest.jpg);
+}
+.midpost{
+    background-image: linear-gradient(rgba(115,115,115,0),rgba(16,16,16,1)),url(../img/Google%20mini%20with%20phone.jpg);
+}
+.rightpost{
+    background-image: linear-gradient(rgba(115,115,115,0),rgba(16,16,16,1)),url(../img/Thermostat.jpg);
+    background-position: center;
+}
+.top-posts .textarea{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+.top-posts .textarea > p{
+    margin: 10px 0 15px 0;
+}
+.bottompost{
+    display: flex;
+    justify-content: space-between;
+}
+.uipost{
+    display: flex;
+    justify-content: space-between;
+}
+.uipost a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: .75em;
+    width: 40%;
+}
+.uipost a img{
+    width: 20px;
+    margin-right: 5px;
+}
+.uipost a div{
+    margin-right: 10px;
+}
+/* 3 Ellipsis Icon */
+.option{
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+.dropoption{
+    position: absolute;
+    top: -84px;
+    left: -50px;
+    flex-direction: column;
+    min-width: 70px;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+.option:hover .dropoption{
+    display: flex;
+}
+/* Categories Section */
+.categories .oneRow{
+    justify-content: space-around;
+}
+.categories .oneRow:last-child{
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.oneRow:last-child .catebox{
+    width: 32%;
+}
+.catebox{
+    width: 25%;
+    background-color: #292f36;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+.catebox .textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+.catebox .textarea > h3{
+    padding: 10px 0;
+}
+.catebox img{
+    height: 35%;
+}
+/* Forum Page */
+.forum {
+    display: flex;
+}
+/* Filter Section */
+.filter{
+    background-color: #4E4E4E;
+    padding: 2rem;
+    color: white;
+}
+.filterRow{
+    display: flex;
+    flex-direction: column;
+}
+.filter .spacebetween h2{
+    text-align: center;
+    color: white;
+}
+.close{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.filterRow h3{
+    padding-top: 10px;
+}
+.sort > div,.uploadRow > div,.uploadRow1 > div{
+    padding: 5px 0;
+}
+.filterRow div label{
+    padding-left: 10px;
+}
+.postsect{
+    padding: 2rem 4rem;
+}
+.spacebetween{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterbtn{
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+.topic{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.topic div{
+    font-size: 14px;
+}
+.topic div a{
+    color: #292f36
+}
+/* Post section */
+.posttable{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.posts{
+    height: 150px;
+    background: #292f36;
+    border-radius: 2rem;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+.posts > img{
+    height: 100%;
+    width: auto;
+    border-radius: 2rem;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.posttextarea{
+    width: 100%;
+    height: 70%;
+    margin: auto 0;
+}
+.posttextarea .bottompost .option{
+    display: none;
+}
+.posttitle{
+    display: flex;
+    justify-content: space-between;
+}
+.posttitle .option{
+    padding-right: 30px;
+}
+.posttitle .dropoption{
+    left: -50px;
+    top: 17px;
+}
+.dropoption a{
+    text-decoration: none;
+    padding: 5px;
+    color: #292f36;
+    transition: background .5s;
+}
+.dropoption a:hover{
+    background: #EAEAEA;
+}
+.fa-exclamation{
+    padding: 0 4px;
+}
+.posttextarea h2{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.posttextarea p{
+    color: white;
+    padding: 10px 0 20px 0;
+    font-size: 1em;
+}
+.page{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.page p a{
+    text-decoration: none;
+    color: #292f36;
+    padding: 0 20px;
+}
+/* Login, Sign Up and Topic Page */
+.form{
+    margin: 60px auto 20px auto;
+}
+.form > h2{
+    margin-bottom: 30px;
+}
+#username{
+    margin-bottom: 15px;
+}
+#email{
+    margin-bottom: 15px;
+}
+.signup-form #password{
+    margin-bottom: 20px;
+}
+.topic-form > label{
+    font-weight: 500;
+    font-size: 19px;
+}
+#username,#email,#password,#title,#description{
+    width: 100%;
+    border: none;
+    border-bottom: 6px #292f36 solid;
+    padding-bottom: 8px;
+    outline: none;
+}
+#title,#description{
+    margin: 10px 0;
+    padding: 5px;
+}
+#description{
+    border: 6px #292f36 solid;
+    height: 200px;
+}
+.remoption{
+    margin: 15px 0 20px 0;
+}
+.remoption label{
+    padding-left: 10px;
+}
+.remoption a{
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #292f36;
+}
+.input-button{
+    margin: 0 auto;
+    width: 60%;
+}
+.input-button > input{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.input-button .button {
+    color: white;
+    border: 2px solid #292f36;
+    background: #292f36;
+    height: 45px;
+    border-radius: 2rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.input-button .button:hover {
+    color: white;
+    background: #1D2126;
+}
+.orsign{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.orsign > div{
+    width: 30%;
+    height: 3px;
+    margin: auto 0;
+    background: #292f36; 
+}
+.signoption{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.signoption > a{
+    text-decoration: none;
+}
+.signoption a div {
+    width: 60px;
+    height: 60px;
+    border-radius: 4rem;
+}
+.signoption a div img{
+    width: 25px;
+    height: 25px;
+    margin: 18px;
+}
+.signface{
+    background: #39579D;
+}
+.signgoogle{
+    background: #D14A28;
+}
+.signtwitter{
+    background: #3996FD;
+}
+.form p{
+    margin-top: 20px;
+}
+.form p a{
+    color: #292f36;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    background-color: #1a1d1a;
+    height: auto;
+    padding: 1rem 3rem;
+    color: white;
+    text-align: center;
+}
+footer .logo{
+    height: 30%;
+    margin: auto 0;
+}
+footer .logo img{
+    padding: 0;
+    width: 80px
+}
+footer .copyright{
+    text-align: center;
+    margin: auto 0;
+}
+.social{
+    width: auto;
+    margin: auto 0;
+}
+.social a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+.social a:first-child{
+    margin: 0;
+}
+.social a img{
+    width: 25px;
+    height: 25px;
+}
+/* col */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Tablet Size */
+@media screen and (max-width: 768px){
+    /* col */
+    .s-col-1 {width: 8.33%;}
+    .s-col-2 {width: 16.66%;}
+    .s-col-3 {width: 25%;}
+    .s-col-4 {width: 33.33%;}
+    .s-col-5 {width: 41.66%;}
+    .s-col-6 {width: 50%;}
+    .s-col-7 {width: 58.33%;}
+    .s-col-8 {width: 66.66%;}
+    .s-col-9 {width: 75%;}
+    .s-col-10 {width: 83.33%;}
+    .s-col-11 {width: 91.66%;}
+    .s-col-12 {width: 100%;}
+    /* Navigation Bar Tablet */
+    nav {
+        height: 90px;
+    }
+    .logo img{
+        width: 80px;
+        padding-left: 1rem;
+    }
+    nav .search{
+        width: 40%;
+    }
+    nav .search button{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    nav .search input{
+        width: 110px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 87px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        padding-right: 0;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .checkbtn{
+        display: block;
+        height: 100%;
+        line-height: 90px;
+        margin-right: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    /* Home Banner */
+    .main-page{
+        background: url(../img/BG%20Banner%20Tablet.png) no-repeat center;
+    }
+    .main-page header h1{
+        font-size: 30px;
+    }
+    /* Top-Post Section */
+    .top-posts .oneRow{
+        flex-direction: column;
+    }
+    .leftpost,.midpost,.rightpost{
+        width: 100%;
+    }
+    .leftpost,.midpost{
+        margin-bottom: 20px;
+    }
+    /* Categories Section */
+    .categories .oneRow{
+        flex-direction: column;
+    }
+    .oneRow .catebox{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .catebox img{
+        height: 70px;
+    }
+    .categories .oneRow:last-child{
+        width: 100%;
+        padding-top: 0;
+    }
+    .oneRow:last-child .catebox{
+        width: 100%;
+    }
+    /* Forum Page */ 
+    .forum{
+        flex-direction: column;
+    }
+    /* Filter Section */
+    .filter{
+        padding: 1rem 2rem;
+        display: none;
+    }
+    .close{
+        display: block;
+    }
+    .appear{
+        display: block;
+    }
+    .filter > h2{
+        text-align: justify;
+    }
+    .filterRow{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .filterbtn{
+        display: block;
+    }
+    /* Post Section */
+    .postsect{
+        padding: 1rem;
+    }
+    .posts{
+        height: auto;
+    }
+    .posts > img{
+        padding-right: 10px;
+    }
+    .posttitle .option{
+        padding-right: 10px;
+    }
+    .posttextarea h2{
+        font-size: 25px;
+    }
+    /* Footer */
+    footer{
+        padding: 1rem;
+    }
+    footer .logo img{
+        width: 50px;
+    }
+    .copyright{
+        font-size: 11px;
+    }
+    .social a{
+        margin-left: 20px;
+    }
+    .social a img{
+        width: 20px;
+        height: 20px;
+    }
+}
+/* Mobile Size */
+@media screen and (max-width: 375px){
+    /* Col */
+    .xs-col-1 {width: 8.33%;}
+    .xs-col-2 {width: 16.66%;}
+    .xs-col-3 {width: 25%;}
+    .xs-col-4 {width: 33.33%;}
+    .xs-col-5 {width: 41.66%;}
+    .xs-col-6 {width: 50%;}
+    .xs-col-7 {width: 58.33%;}
+    .xs-col-8 {width: 66.66%;}
+    .xs-col-9 {width: 75%;}
+    .xs-col-10 {width: 83.33%;}
+    .xs-col-11 {width: 91.66%;}
+    .xs-col-12 {width: 100%;}
+
+    /* Navigation Bar Mobile */
+    nav {
+        height: 90px;
+    }
+    .logo img{
+        width: 80px;
+        padding-left: 1rem;
+    }
+    nav .search{
+        width: 50%;
+    }
+    nav .search input{
+        width: 110px;
+    }
+    /* Home Banner */
+    .main-page header{
+        padding-top: 180px;
+        margin: auto auto;
+    }
+    .main-page{
+        background: url(../img/BG%20Banner%20Mobile.png) no-repeat center;
+        height: 36em;
+    }
+    /* Forum Page */
+    .filter{
+        padding: 1rem;
+    }
+    .posts{
+        flex-direction: column;
+    }
+    .guide > p,.topic > p{
+        font-size: 13px;
+    }
+    .topic div{
+        font-size: 12px;
+    }
+    .posts > img{
+        height: 0%;
+        width: 50%;
+        border-radius: 1rem;
+        padding-right: 0px;
+        margin: 20px auto;
+    }
+    .posttitle .option{
+        display: none;
+    }
+    .posttextarea{
+        width: 90%;
+        height: 0%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .posttextarea .bottompost .option{
+        display: block;
+    }
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+    footer .copyright,footer .social{
+        margin-top: 15px;
+    }
+    .copyright{
+        order: 100;
+    }
+}

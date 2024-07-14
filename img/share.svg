@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="28" viewBox="0 0 25 28">
+  <defs>
+    <clipPath id="clip-share">
+      <rect width="25" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="share" clip-path="url(#clip-share)">
+    <g id="Share-2" data-name="Share" transform="translate(-1483 -188)">
+      <line id="Line_2" data-name="Line 2" x1="10" y2="6" transform="translate(1490.5 194.5)" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <line id="Line_3" data-name="Line 3" x1="10" y1="6" transform="translate(1490.5 204.5)" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1499 188)" fill="none" stroke="#ffffff" stroke-width="1.5">
+        <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+        <circle cx="4.5" cy="4.5" r="3.5" fill="none"/>
+      </g>
+      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1499 207)" fill="none" stroke="#ffffff" stroke-width="1.5">
+        <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+        <circle cx="4.5" cy="4.5" r="3.5" fill="none"/>
+      </g>
+      <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1483 198)" fill="none" stroke="#ffffff" stroke-width="1.5">
+        <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+        <circle cx="4.5" cy="4.5" r="3.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

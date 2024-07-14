@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.92" height="84.39" viewBox="0 0 36.92 84.39">
+  <defs>
+    <clipPath id="clip-temperature">
+      <rect width="36.92" height="84.39"/>
+    </clipPath>
+  </defs>
+  <g id="temperature" clip-path="url(#clip-temperature)">
+    <g id="Temperature-2" data-name="Temperature" transform="translate(-71.983 -0.197)">
+      <path id="Path_63" data-name="Path 63" d="M90.461,84.394a18.46,18.46,0,0,1-13.187-31.38V13.187a13.187,13.187,0,1,1,26.373,0V53.014a18.46,18.46,0,0,1-13.187,31.38Zm0-79.12a7.921,7.921,0,0,0-7.912,7.912V54.139a2.637,2.637,0,0,1-.878,1.965,13.187,13.187,0,1,0,17.581,0,2.637,2.637,0,0,1-.878-1.965V13.187a7.921,7.921,0,0,0-7.912-7.912Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_64" data-name="Path 64" d="M146.549,118.607V74.637a2.637,2.637,0,1,0-5.275,0v43.969a7.912,7.912,0,1,0,5.275,0Zm-2.637,10.1a2.637,2.637,0,1,1,2.637-2.637A2.64,2.64,0,0,1,143.912,128.7Z" transform="translate(-53.451 -60.132)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

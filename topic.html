@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inno</title>
+        <link href="img/thumblogo.svg" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.typekit.net/xww3qyy.css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <nav>
+            <label class="logo"><img src="img/Logo.svg" alt="Logo"></label>
+            <div class="search">
+                <form action="#">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="search" placeholder="Find a product" name="search">
+                </form>
+                <div class="isearch"></div>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <section class="form col-4 s-col-7 xs-col-10">
+            <h2>Create Topic</h2>
+            <form action="#" class="topic-form" method="post">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Title of topic" required>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" placeholder="Type your message here" required></textarea>
+                <div class="input-button">
+                    <input class="button" type="submit" value="Post">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

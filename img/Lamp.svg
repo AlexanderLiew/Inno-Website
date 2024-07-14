@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="341" viewBox="0 0 125 341">
+  <defs>
+    <clipPath id="clip-Lamp">
+      <rect width="125" height="341"/>
+    </clipPath>
+  </defs>
+  <g id="Lamp" clip-path="url(#clip-Lamp)">
+    <g id="Group_76" data-name="Group 76" transform="translate(1193 -1157.558)">
+      <g id="Group_49" data-name="Group 49" transform="translate(-1193.315 1157.913)">
+        <line id="Line_21" data-name="Line 21" y1="214.989" transform="translate(61.777 116.278)" fill="none" stroke="#292f36" stroke-linecap="round" stroke-width="8"/>
+        <g id="Path_59" data-name="Path 59" fill="none">
+          <path d="M14.706,0h95.586L125,117H0Z" stroke="none"/>
+          <path d="M 21.76295471191406 8.000007629394531 L 9.068466186523438 108.9989624023438 L 115.9284973144531 108.9989624023438 L 103.2340240478516 8.000007629394531 L 21.76295471191406 8.000007629394531 M 14.70552825927734 7.62939453125e-06 L 110.2914581298828 7.62939453125e-06 L 124.996955871582 116.9989624023438 L 7.62939453125e-06 116.9989624023438 L 14.70552825927734 7.62939453125e-06 Z" stroke="none" fill="#292f36"/>
+        </g>
+      </g>
+      <path id="Rectangle_34" data-name="Rectangle 34" d="M11,0H70A11,11,0,0,1,81,11v5a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V11A11,11,0,0,1,11,0Z" transform="translate(-1171 1482.558)" fill="#292f36"/>
+      <line id="Line_26" data-name="Line 26" y2="64.929" transform="translate(-1169.053 1269.862)" fill="none" stroke="#292f36" stroke-width="6"/>
+      <circle id="Ellipse_21" data-name="Ellipse 21" cx="9" cy="9" r="9" transform="translate(-1178 1321.558)" fill="#292f36"/>
+    </g>
+  </g>
+</svg>
